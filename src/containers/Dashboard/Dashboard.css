@@ -1,0 +1,39 @@
+.Dashboard{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid white;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+
+.DarkDashboard{
+    background-color: #000380;
+    color: #F2F2F2;
+}
+
+.LightDashboard{
+    background-color: #82B8D9;
+    color: #000380;
+}
+
+.CurrentCondition{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.WeatherText{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.FiveDaysForecast{
+    position: relative;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+}

@@ -1,0 +1,24 @@
+.HeaderButtons{
+    position: fixed;
+    width: 100%;
+    top: 56px;
+    background-color: lightblue;
+    height: 25px;
+    z-index: 90;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+    align-items: center;
+    height: 100%;
+}
+
+.DarkHeaderButtons{
+    background-color: #000140;
+}
+
+.LightHeaderButtons{
+    background-color:  #367DD9
+}

@@ -1,0 +1,14 @@
+
+
+.Button{
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+
+.Button:hover{
+    background-color: white;
+    color: blue;
+    border-color: white;
+}

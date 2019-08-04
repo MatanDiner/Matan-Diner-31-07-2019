@@ -1,0 +1,86 @@
+.DayForecast{
+    width: 140px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+
+.DayNmae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid black;
+}
+
+.DarkDayNmae{
+    color: red;
+    background-color: white
+}
+
+.LightDayNmae{
+    background-color: white;
+}
+
+.Forecasts{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.Day,.Night{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.Day{
+    background-color: lightskyblue;
+    color: blue;
+}
+
+.Night{
+    border-left: 0.5px solid black;
+    background-color: black;
+    color: white;
+}
+
+.Sun{
+    color: yellow;
+}
+
+.Moon{
+    color: gold;
+}
+
+.Sun,.Moon{
+    float: left;
+    margin-left: 5px;
+}
+
+.SunCloud,.MoonCloud{
+    float: left;
+    z-index: 5;
+    position: relative;
+    right: 7px;
+    font-size: 12px;
+    top: 3px;
+}
+
+.SunCloud{
+    color: gray;
+}
+
+.MoonCloud{
+    color: white;
+}
+
+.weatherTextDiv{
+    height: 50px;
+}
+

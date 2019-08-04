@@ -1,0 +1,11 @@
+.Li{
+    font-size: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid blue;
+}
+
+.Li:hover{
+    background-color: lightblue;
+}

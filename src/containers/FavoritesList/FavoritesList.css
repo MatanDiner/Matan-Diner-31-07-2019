@@ -1,0 +1,9 @@
+.FavoritesList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Link{
+    color: black;
+    text-decoration: none
+}

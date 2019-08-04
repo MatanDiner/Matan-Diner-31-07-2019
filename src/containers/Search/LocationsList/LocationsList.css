@@ -1,0 +1,12 @@
+.List{
+    list-style-type: none;
+    position: relative;
+    bottom: 16px;
+    padding: 0;
+    border-right: 0.5px solid blue;
+    width: 195px;
+    border-left: 0.5px solid blue;
+    background-color: white;
+    max-height: 100px;
+    overflow: auto;
+}

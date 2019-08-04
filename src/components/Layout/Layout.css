@@ -1,0 +1,15 @@
+.Content{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 569px
+}
+
+.DarkContent{
+background-color: #000140;
+}
+
+.LightContent{
+    background-color:  #367DD9
+}

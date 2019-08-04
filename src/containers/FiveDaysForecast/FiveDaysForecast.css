@@ -1,0 +1,12 @@
+.FiveDaysForecast{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.DarkFiveDaysForecast{
+    background-color: blue;
+}
+
+.LightFiveDaysForecast{
+    background-color: #7B84DB;
+}

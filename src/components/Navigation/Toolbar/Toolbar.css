@@ -1,0 +1,35 @@
+.Toolbar{
+
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #703b09;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 90;
+}
+
+.DarkToolbar{
+    background-color: #000140;
+}
+
+.LightToolbar{
+    background-color:  #367DD9
+}
+
+.Toolbar nav{
+    height: 100%;
+}
+
+.DesktopOnly{
+    float: right;
+}
+
+
+@media (max-width:399px){
+    .DesktopOnly{
+    display: none;
+    }
+}

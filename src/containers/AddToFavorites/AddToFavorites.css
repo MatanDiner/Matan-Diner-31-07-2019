@@ -1,0 +1,36 @@
+.AddToFavorites{
+    display: flex;
+    justify-content: space-evenly;
+    width: 160px;
+    font-size: 25px;
+}
+
+.AddToFavoritesAnimation{
+    animation-name: fontbulger ;
+    animation-duration: 4s;
+}
+
+@keyframes fontbulger {
+    0%, 100% {
+      font-size: 25px;
+    }
+    50% {
+      font-size: 40px;
+    }
+  }
+
+.AddSentence{
+    border: 1px solid black;
+    box-shadow: 5px;
+    box-shadow: 5px 5px 10px blue;
+    height: 25px;
+}
+
+.favoriteIcon{
+    color: red;
+}
+
+
+.noFavoriteIcon:hover{
+    color: red;
+}
