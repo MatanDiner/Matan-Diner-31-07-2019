@@ -7,7 +7,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    getFavorites: () => dispatch(action.getFavorites())
+    getFavorites: () => dispatch(action.getFavorites()),
+    removeFromFavorites: (id) => dispatch(action.removeFromFavorites(id))
 })
 
 const FavorietsContainer = connect(mapStateToProps, mapDispatchToProps)(Favorites);
