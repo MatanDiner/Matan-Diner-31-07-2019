@@ -20,8 +20,8 @@ const Favorites = props => {
     })
 
     useEffect(() => {
-        if(!props.favorites)
-        props.getFavorites();
+        if (!props.favorites)
+            props.getFavorites();
     }, [])
 
     useEffect(() => {
@@ -49,6 +49,10 @@ const Favorites = props => {
         })
     }
 
+    const removeFromFavorite = id => {
+        props.removeFromFavorites(id);
+    }
+
     let errorMassage = null;
     if (errorState.error) {
         errorMassage = <Modal show={errorState.error}
@@ -58,7 +62,10 @@ const Favorites = props => {
 
     let favoriteList = <Spinner />
     if (favoritesState.favoritesList) {
-        favoriteList = <FavoritesList favoritesList={favoritesState.favoritesList} />
+        favoriteList = <FavoritesList
+            favoritesList={favoritesState.favoritesList}
+            removeFromFavorite={removeFromFavorite}
+        />
     }
 
     return (
