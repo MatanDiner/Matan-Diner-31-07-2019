@@ -20,6 +20,7 @@ const Favorites = props => {
     })
 
     useEffect(() => {
+        if(!props.favorites)
         props.getFavorites();
     }, [])
 
