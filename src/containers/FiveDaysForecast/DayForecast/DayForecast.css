@@ -35,7 +35,7 @@
     flex-direction: column;
     width: 50%;
     justify-content: space-around;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: auto
 }
 
