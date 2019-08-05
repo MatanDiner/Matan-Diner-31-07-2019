@@ -1,29 +1,35 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import classes from './FavoritesList.css';
 import Favorite from './Favorite/Favorite';
-import { Link } from 'react-router-dom';
+import HeaderButtonsContext from '../../Contexts/headerButtonsContext';
+const FavoritesList = props => {
 
-const favoritesList = props => {
+  const context = useContext(HeaderButtonsContext);
+
+  let classesArr = [classes.FavoritesList, classes.DarkFavoritesList]
+  if (!context.screenMode) {
+      classesArr = [classes.FavoritesList, classes.LightFavoritesList]
+  }
+
   const favoritesList = (
 
     props.favoritesList.map(favorite => {
       return (
-        <Link className={classes.Link} to={`/${favorite.id}/${favorite.name}`}
-          key={favorite.id}>
-          <Favorite
-            name={favorite.name}
-            locationKey={favorite.id}
-            temp={favorite.temp}
-            weatherText={favorite.weatherText}
-            unit={favorite.unit}
-          /></Link>
+        <Favorite key={favorite.id}
+          name={favorite.name}
+          locationKey={favorite.id}
+          temp={favorite.temp}
+          weatherText={favorite.weatherText}
+          unit={favorite.unit}
+          removeFromFavorite={props.removeFromFavorite}
+        />
       )
     })
   )
 
   return (
 
-    <div className={classes.FavoritesList}>
+    <div className={classesArr.join(" ")}>
       {favoritesList}
     </div>
 
@@ -32,4 +38,4 @@ const favoritesList = props => {
 
 }
 
-export default favoritesList;
+export default FavoritesList;
