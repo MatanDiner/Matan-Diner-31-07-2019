@@ -110,6 +110,7 @@ const Dashboard = props => {
                     unit={forecastsState.curentConditions.Unit}
                 />
                 <AddToFavorites isFavorite={isFavoriteState.isFavorite}
+                    locationKey={props.locationKey}
                     addToFavoritesToggle={(isFavorite) => addToFavoritesToggle(isFavorite)}
                 />
             </div>
