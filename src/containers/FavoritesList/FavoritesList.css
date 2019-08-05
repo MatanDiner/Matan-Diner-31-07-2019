@@ -3,7 +3,10 @@
     flex-wrap: wrap;
 }
 
-.Link{
-    color: black;
-    text-decoration: none
+.DarkFavoritesList{
+background-color: #000140;
+}
+
+.LightFavoritesList{
+    background-color:#367DD9;
 }
